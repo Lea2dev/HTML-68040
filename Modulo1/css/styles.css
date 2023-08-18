@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Shadows+Into+Light&display=swap');
+/* font usage
+font-family: 'Dancing Script', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
+:root{
+    font-size: 32px;
+}
+
+/* referencias a etiqueteas, clases y7o ids */
+/* apertura comentario
+                cierre de comentario*/
+h2, h3 {
+    /* aca van los estilos para h1*/
+    font-size: 40px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h3{
+    font-size: 32px;
+}
+
+p {
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    /* font: 36px 'Dancing Script', cursive; */
+}
+
+h2 strong{
+    color:red;
+}
+
+
+
+body {
+    margin: 50px;
+    background-color: aliceblue;
+}
