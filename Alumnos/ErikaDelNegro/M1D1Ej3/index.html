@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2</title>
+    <link rel="stylesheet" href="/Ejercicio2/estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+        /*
+font-family: 'Montserrat', sans-serif; semi bold
+
+font-family: 'Montserrat', sans-serif; - black
+*/
+        * {
+            text-align: center;
+        }
+
+        #uno {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50pt;
+            color: #0a2ff1;
+        }
+
+        #dos {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 148pt;
+            color: white;
+            background-color: black;
+        }
+
+        #tres {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 163pt;
+            color: black;
+        }
+
+        #cuatro {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36pt;
+            color: #0a2ff1;
+        }
+
+        #cuatro strong {
+            font-size: 45pt;
+            background-color: black;
+            color: white;
+        }
+
+
+        #cinco {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 44pt;
+            color: #0a2ff1;
+        }
+
+        #relleno {
+            background-color: #0a2ff1;
+            height: 50px;
+        }
+
+        .noBold{  /*como le diste tratamiento a la etiqueta bold, hago lo inverso para el "de hasta"*/
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="relleno"></div>
+    <list><!-- esta no es una etiqueta html -->
+
+        <div id="uno">
+            <h6>23 NOVIEMBRE</h6>
+        </div>
+        <br>
+        <div id="dos">
+            BLACK
+        </div>
+        <br>
+        <div id="tres">
+            FRIDAY
+        </div>
+        <br>
+        <div id="cuatro">
+            <!-- uso etiqueta "b" para no usar bold y que aplique el estilo que usaste-->
+            <h5><b>DESCUENTOS</b> <span class="noBold">DE HASTA EL</span>  <strong>50%</strong></h5>
+        </div>
+        <br>
+        <div id="cinco">
+            !NO TE LO PIERDAS!
+        </div>
+
+    </list>
+    <div id="relleno"></div>
+</body>
+
+</html>
