@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modulo 2</title>
     <style>
+        /* 
+        *{
+            box-sizing: border-box;
+            color: red;
+        }
+        */
         a{
             color:chocolate;
             text-decoration: none;
@@ -19,8 +25,43 @@
             font-style: italic;
             text-decoration: underline;
         }
+        a:active{
+            text-decoration: underline;
+            color:aquamarine
+        }
+
+        .div1{  /* las clases llevan un "punto" delante de su nombre en el sector de estilos*/
+            width: 300px;
+            height: 100px;
+            border: 3px solid blue;
+        }
+
+        .div2{  
+            width: 300px;
+            height: 100px;
+            border: 3px solid blue;
+            padding: 30px;
+        }
+
+        .div3{  /* las clases llevan un "punto" delante de su nombre en el sector de estilos*/
+            width: 300px;
+            height: 100px;
+            border: 3px solid blue;
+            box-sizing: border-box;
+        }
+
+        .div4{  
+            width: 300px;
+            height: 100px;
+            border: 3px solid blue;
+            padding: 30px;
+            box-sizing: border-box;
+        }
         
-        
+        img{
+            width: 100%;
+        }
+
     </style>
 </head>
 
@@ -52,6 +93,41 @@
 
 <a href="link_no_visitado">Link no visitado</a>
 
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, porro. Delectus architecto vero, illo dolorem ullam harum quis distinctio explicabo consequatur fugit eum dolore quae perferendis modi esse. Quos, iusto!</p>
+<p style="text-align:center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, porro. Delectus architecto vero, illo dolorem ullam harum quis distinctio explicabo consequatur fugit eum dolore quae perferendis modi esse. Quos, iusto!</p>
+<p style="text-align:end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, porro. Delectus architecto vero, illo dolorem ullam harum quis distinctio explicabo consequatur fugit eum dolore quae perferendis modi esse. Quos, iusto!</p>
+<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, porro. Delectus architecto vero, illo dolorem ullam harum quis distinctio explicabo consequatur fugit eum dolore quae perferendis modi esse. Quos, iusto!</p>
+
+<p style="text-decoration: underline;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda earum non velit necessitatibus aliquid sequi ratione mollitia? Ipsam quos id quaerat repudiandae. Recusandae, alias maxime unde ex hic nesciunt voluptatem!</p>
+<p style="text-decoration: underline blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda earum non velit necessitatibus aliquid sequi ratione mollitia? Ipsam quos id quaerat repudiandae. Recusandae, alias maxime unde ex hic nesciunt voluptatem!</p>
+<p style="text-decoration: underline blue 8px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda earum non velit necessitatibus aliquid sequi ratione mollitia? Ipsam quos id quaerat repudiandae. Recusandae, alias maxime unde ex hic nesciunt voluptatem!</p>
+<p style="text-decoration: line-through;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda earum non velit necessitatibus aliquid sequi ratione mollitia? Ipsam quos id quaerat repudiandae. Recusandae, alias maxime unde ex hic nesciunt voluptatem!</p>
+<p style="text-decoration: overline;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda earum non velit necessitatibus aliquid sequi ratione mollitia? Ipsam quos id quaerat repudiandae. Recusandae, alias maxime unde ex hic nesciunt voluptatem!</p>
+<p style="text-decoration: overline underline;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda earum non velit necessitatibus aliquid sequi ratione mollitia? Ipsam quos id quaerat repudiandae. Recusandae, alias maxime unde ex hic nesciunt voluptatem!</p>
+
+<p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam fugit maiores temporibus facilis aliquam! Ipsum eaque labore cum mollitia provident quisquam veniam delectus? Tempora non vel adipisci cumque magnam!</p>
+<p style="text-transform: lowercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam fugit maiores temporibus facilis aliquam! Ipsum eaque labore cum mollitia provident quisquam veniam delectus? Tempora non vel adipisci cumque magnam!</p>
+<p style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam fugit maiores temporibus facilis aliquam! Ipsum eaque labore cum mollitia provident quisquam veniam delectus? Tempora non vel adipisci cumque magnam!</p>
+
+
+<h2>Ancho alto y box-sizing</h2>
+
+<div class="div1">Div con 300px de ancho (width) por 100px alto (heihgt)</div>
+<br>
+<div class="div2">Div con 300px de ancho (width) por 100px alto (heihgt)</div>
+
+<br>
+
+<div class="div3">Div con 300px de ancho (width) por 100px alto (heihgt)</div>
+<br>
+<div class="div4">Div con 300px de ancho (width) por 100px alto (heihgt)</div>
+
+<h2>Imagenes:</h2>
+<p>lo que es "src" referencia al origen o source</p>
+<a href="https://www.lenovo.com/ar/es/laptops/thinkpad/serie-e/E15-G2/p/22TPE15E5N2" target="_blank">
+    <img src="https://static.lenovo.com/las/landings/tab-servicios/las-tabs-servicios-red-banner-desktop.png" alt="Banner publicidad Lenovo">
+</a>
 </body>
 
 </html>
