@@ -3,22 +3,69 @@
 font-family: 'Coiny', cursive;
 font-family: 'Roboto', sans-serif;
 */
+
+:root{
+    font-size: 16px;
+}
+
 *{
     box-sizing: border-box;
+}
+
+header, section, aside{
+    padding: 0px 50px;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(242, 242, 242);
     margin: 0px;
-    font-size: 32px;
+    font-size: 2em;
+}
+.coiny{
+    font-family: 'Coiny', cursive;
+}
+
+.tamanioTitulo{
+    font-size: 50px;
 }
 
 img{
     width: 20%;
 }
 
+footer{
+    background-color: #FCEE21 ;
+    padding:10px 50px;
+}
+
 footer h1{
+    display: inline;
     font-size: 33px;
-    font-family: 'Coiny', cursive;
+}
+
+.font2p5em{
+    font-size: 2.5em;
+    line-height: 0.7em;
+}
+
+h1,h2,h3,h4{
+    font-size: 34px;
+}
+
+h2,h3{
+    background-color: #FCEE21 ;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+a:hover{
+    color:#888;
+}
+
+li a{
+    margin-left: 50px;
 }
