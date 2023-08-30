@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 3</title>
+    <style>
+        div {
+            margin: 10px 0px;
+        }
+        label, input, textarea, button{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Bordes</h2>
+
+    <div style="border: 5px solid blue">Hola</div>
+    <div style="border: 5px dotted blue">Hola</div>
+    <div style="border: 5px dashed blue">Hola</div>
+    <div style="border: 5px inset blue">Hola</div>
+    <div style="border: 5px groove blue">Hola</div>
+
+
+    <h2>Listas</h2>
+    <h3>No ordenadas</h3>
+
+    <!-- Lista no ordenada es un-ordered list-->
+    <ul type="circle"><!-- aca digo que hay una lista-->
+        <li>item 1</li><!-- list item, o elemento de lista-->
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+    <h3>Ordenadas</h3>
+    <ol type="i"><!-- ordered list-->
+        <li>item 1</li><!-- list item, o elemento de lista-->
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+
+    <p>Los tipos se suelen manejar por CSS -> list-style-type: </p>
+    <p>-> lower-alpha</p>
+    <p>-> upper-alpha</p>
+    <p>-> lower-roman</p>
+    <p>-> lower-roman</p>
+    <p>-> none</p>
+
+    <h3>Formulario</h3>
+    <p>El form genera una variable del tipo Array, que contiene los valores pertenecientes a los elementos del
+        formulario</p>
+    <p>En php la variable se llama $_POST[]</p>
+    <form action="formulario.php" method="post" id="miForm">
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" placeholder="Juan Perez" required>
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" placeholder="+54 9 9999-9999">
+        <label for="telefono">Mail</label>
+        <input type="email" name="email" placeholder="mail@dominio.com">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" name="contrasena" required>
+        <label for="">Edad</label>
+        <input type="number" name="edad" min="18" max="100">
+
+        <textarea name="comentarios" id="" cols="30" rows="5"></textarea>
+
+
+        <select name="desplegable" id="">
+            <option value="">elemento1</option>
+            <option value="" selected>elemento2</option>
+            <option value="">elemento3</option>
+        </select>
+
+        <br>
+        <input type="checkbox" id="michk1" style="display: inline;">
+        <label for="michk1" style="display: inline;" value="op1">opcion 1</label>
+        <br>
+        <input type="checkbox" id="michk1" style="display: inline;" checked>
+        <label for="michk1" style="display: inline;" value="op2">opcion 2</label>
+
+        <br><br>
+
+        <input type="radio" name="op1" id="radiobtn1" style="display: inline;">
+        <label for="radiobtn1" style="display: inline;">Opcion1</label>
+        <input type="radio" name="op1" id="radiobtn2" style="display: inline;">
+        <label for="radiobtn1" style="display: inline;">Opcion2</label>
+        <input type="radio" name="op1" id="radiobtn3" style="display: inline;">
+        <label for="radiobtn1" style="display: inline;">Opcion3</label>
+
+        <input type="file">
+        <input type="file" multiple>
+
+        <input type="submit" value="enviar"> 
+        <input type="reset" value="limpiar"> 
+        
+    </form>
+
+    <button type="submit" form="miForm">Hola</button>
+
+    <br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>
