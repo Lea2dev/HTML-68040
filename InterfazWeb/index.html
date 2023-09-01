@@ -83,18 +83,14 @@
             <div><h3>Envianos tu consulta >></h3></div>
             
 
-            <form action="contacto.php" method="post">
-
-                <label>Nombre *</label>
-                <input type="text" required placeholder="Su nombre...">
-                <label>Email *</label>
-                <input type="email" placeholder="mail@mimail.com" required>
-                <label>Mensaje *</label>
-                <textarea required></textarea>
-                
-                <button type="submit">Enviar consulta</button>
-                <button type="reset">Borrar</button>
-
+            <form action="php/contacto.php" method="post">
+                <label for="nombre">Nombre *</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Nombre y apellido">
+                <label for="mail">E-Mail *</label>
+                <input type="text" name="email" id="mail" placeholder="mail@dominio.com.ar" required>
+                <label for="comentario">Mensaje *</label>
+                <textarea name="comentarios" id="commentario" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar consulta">
             </form>
 
         </section>
