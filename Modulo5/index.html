@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        height: 250px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #rojo {
+        background-color: red;
+        padding: 40px;
+      }
+      #verde {
+        background-color: green;
+        padding: 40px;
+      }
+      #azul {
+        background-color: blue;
+        padding: 40px;
+      }
+
+      @media screen and (max-width: 680px) {
+        /*condiciones*/
+        /* aca cambiamos el flex*/
+        main {
+          flex-flow: column;
+        }
+        #rojo {
+          background-color: red;
+          padding: 6px;
+        }
+        #verde {
+          background-color: green;
+          padding: 6px;
+        }
+        #azul {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex</h2>
+
+    <main>
+      <section id="rojo">R</section>
+      <section id="verde">V</section>
+      <section id="azul">A</section>
+    </main>
+
+    <a href="https://codepen.io/LeandroPais/pen/gOQLqGa">Codepen flex</a>
+
+    <h2>iframe</h2>
+
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/YNRPEE8RsBE?si=BUrw-rzoNN2z8w4L" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+
+    <video src="archivodevideo.mp4" controls width="200px" height="150px"></video>
+    <audio src="archivodeaudio.mp3" controls muted></audio>
+
+
+    <h2>Tablas</h2>
+    <p>tr -> table row<br>
+        td -> table data -> columna</p>
+    <table border="0" cellpadding="5" cellspacing="1">
+        <caption>Tabla de ejemplo</caption>
+        <thead style="background-color: aquamarine;">
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+        </thead>
+        <tr style="background-color: aquamarine;">
+            <td colspan="2">col1</td>
+            <td>col3</td>
+        </tr>
+        <tr style="background-color: aquamarine;">
+            <td>col1</td>
+            <td>col2</td>
+            <td>col3</td>
+        </tr>
+        <tr style="background-color: aquamarine;">
+            <td rowspan="2">col1</td>
+            <td>col2</td>
+            <td>col3</td>
+        </tr>
+        <tr style="background-color: aquamarine;">
+            
+            <td>col2</td>
+            <td>col3</td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+  </body>
+</html>

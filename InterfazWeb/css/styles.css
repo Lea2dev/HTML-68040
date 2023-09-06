@@ -16,6 +16,36 @@ header, section, aside{
     padding: 0px 50px;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encolumnar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.encolumnarRedes{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.separador{
+    border-bottom: 1px solid #808080;
+}
+
+aside{
+    color: #808080;
+    font-size: 33px;
+    font-weight: bold;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(242, 242, 242);
@@ -30,8 +60,17 @@ body{
     font-size: 50px;
 }
 
-img{
-    width: 20%;
+.al80{
+    width: 80%;
+}
+
+.al100{
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    max-width: 800px;
 }
 
 footer{
@@ -42,6 +81,7 @@ footer{
 footer h1{
     display: inline;
     font-size: 33px;
+    margin-right: 80px;
 }
 
 .font2p5em{
@@ -50,7 +90,7 @@ footer h1{
 }
 
 h1,h2,h3,h4{
-    font-size: 34px;
+    font-size: 26.6px;
 }
 
 h2,h3{
@@ -72,9 +112,10 @@ li a{
 }
 
 ol{
-    font-size: 2em;
+    font-size: 32px;
     font-weight: 400;
     list-style-position: outside;
+    line-height: 60px;
 }
 
 /*
@@ -89,6 +130,27 @@ ul{
 
 input, textarea, label{
     display: block;
+    font-size: 26.6px;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button{
+    font-weight: bold;
+    font-size: 32px;
+    background-color: #000;
+    color: #FFF;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+h4{
+    font-size: 54.6px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h5{
@@ -102,4 +164,39 @@ h5{
 
 .amarillo{
     background-color: #FCEE21;
+    font-weight: bold;
 }
+
+.rojo{
+    color: #d01212;
+}
+
+
+@media screen and (max-width:860px) {
+    .encolumnar{
+        flex-flow: column;
+    }
+
+    section img{
+        display: none;
+    }
+
+    aside img{
+        width: 60%;
+    }
+}
+
+@media print{
+    img{
+        display: none;
+    }
+    .encolumnar{
+        flex-flow: column;
+    }
+
+    form{
+        display: none;
+    }
+
+}
+
